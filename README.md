@@ -52,6 +52,7 @@ Optional : By sending the message -mempool- , you can check the mempool's "midpo
 
 <br><br>
 **When you reach the last line of the raw transaction, you need to use two equal signs == to terminate it and broadcast the transaction. You will see the "FIN!" message that signifies it will try to broadcast the transaction.**
+<br>
 ![Stuff](https://github.com/BTCtoolshed/MeshtasticBitcoinCore_Bridge/blob/main/photos/Bridge06.png?raw=true)
 
 <br><br>
