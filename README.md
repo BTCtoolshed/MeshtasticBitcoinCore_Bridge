@@ -33,7 +33,7 @@ You will need to edit the Python file to specify the USB device path and also th
 ![Stuff](https://github.com/BTCtoolshed/MeshtasticBitcoinCore_Bridge/blob/main/photos/Bridge02.png?raw=true)
 
 <br><br>
-**How do you fix when you make an error? You just type in -clear- and start over.**
+**How do you fix when you make an error? You just type in -clear- and start over.**<br>
 ![Stuff](https://github.com/BTCtoolshed/MeshtasticBitcoinCore_Bridge/blob/main/photos/BridgeBytes.png?raw=true)
 
 <br><br>
