@@ -15,8 +15,8 @@ If you don't know how to use Python, please go and find some training for this. 
 
 # Commands
 * -mempool- : Ask the Bitcoin Core machine for the latest midpoint of fees. This will help you construct your raw transaction offline, especially helpful if you have an offline phone wallet.
-* + : Add the + symbol and then approximately 200 characters of the raw transaction hex to start constructing the long string
-* == : Add == to terminate the string and send the transaction
+* \+ : Add the + symbol and then approximately 200 characters of the raw transaction hex to start constructing the long string
+* \== : Add == to terminate the string and send the transaction
 * -clear- : If you make a mistake, you can clear the string and start over
 
 # Example
