@@ -8,10 +8,11 @@ My challenge was to send raw transactions for broadcasting over Lora, but using 
 
 # Necessary Devices
 
-* A machine running Bitcoin Core, a Meshtastic device connected over USB serial to the same machine. Bitcoin Core and Meshtastic already have great tutorials.
+* A computer running Bitcoin Core
+* A Meshtastic device connected over USB serial to the same computer. 
 
 # Instructions
-If you don't know how to use Python, please go and find some training for this. If you do know how to use python, simply install the Meshtastic, pyserial and requests libraries if you do not have them installed. Then you can run the python file included.
+Bitcoin Core and Meshtastic already have great tutorials. If you don't know how to use Python, please go and find some training for this. If you do know how to use python, simply pip or pip3 install the Meshtastic, pyserial and requests python libraries if you do not have them installed. Then you can run the python file included.
 
 # Commands
 * **-mempool-** : Ask the Bitcoin Core machine for the latest midpoint of fees. This will help you construct your raw transaction offline, especially helpful if you have an offline phone wallet.
