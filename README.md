@@ -2,6 +2,8 @@
 Broadcast Raw Transactions over Meshtastic Lora to a maching with Bitcoin Core
 
 # Use Case
+https://gotenna.com/blogs/newsroom/blockstream-satellite-and-gotenna-collaborate-to-make-sending-bitcoin-without-internet-possible
+
 Blockstream demonstrated how to use Bitcoin Core without users needing an internet or cellular connection. The machine running Bitcoin Core connected to a Blockstream Satellite and receiving transaction information via Lora Radios (goTenna). 
 
 My challenge was to send raw transactions for broadcasting over Lora, but using Meshtastic. Meshtastic's apps have a maximum buffer of 228 bytes (approximately 228 characters), but raw hex for bitcoin core transactions may be more than 1000 characters. This python file will interpret the "+" and "==" to construct long strings to broadcast the transaction.
