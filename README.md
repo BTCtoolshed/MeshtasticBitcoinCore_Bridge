@@ -43,17 +43,14 @@ You will need to edit the Python file to specify the USB device path and also th
 
 **Optional : By sending the message -mempool- , you can check the mempool's "midpoint" of fees to properly account for fees before creating a raw transaction. Every time the python program interacts with your messages sent over Meshtastic, you will see it reply "recvd.." to note that your message has been received.**
 <br>
-![Stuff](https://github.com/BTCtoolshed/MeshtasticBitcoinCore_Bridge/blob/main/photos/Bridge03.png?raw=true)
-
-<br><br>
 **Begin sending pieces of your raw transaction with the + sign as you constructed in prior steps. Send them in order! And wait until you see the reply "recvd.." and the following character count, like you see below as Length:204 (this will vary for you).**
 <br>
-![Stuff](https://github.com/BTCtoolshed/MeshtasticBitcoinCore_Bridge/blob/main/photos/Bridge05.png?raw=true)
+![Stuff](https://github.com/BTCtoolshed/MeshtasticBitcoinCore_Bridge/blob/main/photos/Bridge03.png?raw=true)
 
 <br><br>
 **After receiving the confirmation of the length of the long string you are constructing, you can keep adding portions of the raw transaction...**
 <br>
-![Stuff](https://github.com/BTCtoolshed/MeshtasticBitcoinCore_Bridge/blob/main/photos/Bridge06.png?raw=true)
+![Stuff](https://github.com/BTCtoolshed/MeshtasticBitcoinCore_Bridge/blob/main/photos/Bridge05.png?raw=true)
 
 <br><br>
 **When you reach the last line of the raw transaction, you need to use two equal signs == to terminate it and broadcast the transaction. You will see the "FIN!" message that signifies it will try to broadcast the transaction.**
