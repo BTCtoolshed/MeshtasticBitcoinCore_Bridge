@@ -105,12 +105,12 @@ while True:
         try:
             pub.subscribe(onReceive, "meshtastic.receive.text")
             pub.subscribe(onConnection, "meshtastic.connection.established")
-            interface = meshtastic.serial_interface.SerialInterface(devPath='COM8') #you need to input your devPath (windows will be COM# like COM5, linux something like /dev/ttyUSB0
+            interface = meshtastic.serial_interface.SerialInterface(devPath='COM8') #YOU need to input your devPath (windows will be COM# like COM5, linux something like /dev/ttyUSB0
         except Exception:
             print(f"Lora comms not reestablished")
     
     if len(MANUALBTCTR) > 20:
-        BTCSEND = "/usr/local/bin/bitcoin-cli sendrawtransaction "+MANUALBTCTR #This is where 
+        BTCSEND = "/whateverpathyouhave/bitcoin-cli sendrawtransaction "+MANUALBTCTR #YOU NEED TO SPECIFY CLI COMMAND PATH
         interface.sendText("BTC Transaction Attempt Broadcast!")
         try:
             BTCBROAD = subprocess.getoutput(BTCSEND)
