@@ -1,5 +1,5 @@
 # Meshtastic BitcoinCore Bridge
-Broadcast Raw Transactions over Meshtastic Lora to a maching with Bitcoin Core
+Broadcast Raw Transactions over Meshtastic Lora to a computer with Bitcoin Core
 
 # Use Case
 https://gotenna.com/blogs/newsroom/blockstream-satellite-and-gotenna-collaborate-to-make-sending-bitcoin-without-internet-possible
