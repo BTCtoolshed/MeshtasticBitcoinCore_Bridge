@@ -8,6 +8,10 @@ Blockstream demonstrated how to use Bitcoin Core without users needing an intern
 
 My challenge was to send raw transactions for broadcasting over Lora, but using Meshtastic. Meshtastic's apps have a maximum buffer of 228 bytes (approximately 228 characters), but raw hex for bitcoin core transactions may be more than 1000 characters. This python file will interpret the "+" and "==" to construct long strings to broadcast the transaction.
 
+Here is the example of the maximum buffer, thus why you need a string constructor like this python file.
+<br>
+![Stuff](https://github.com/BTCtoolshed/MeshtasticBitcoinCore_Bridge/blob/main/photos/BridgeBytes.png?raw=true)
+
 # Necessary Devices
 
 * A computer running Bitcoin Core
@@ -27,27 +31,28 @@ You will need to edit the Python file to specify the USB device path and also th
 # Example
 
 **Begin by taking your raw transaction hex and dividing it into portions 200 characters or less and add a + sign to the text.**
+<br>
 ![Stuff](https://github.com/BTCtoolshed/MeshtasticBitcoinCore_Bridge/blob/main/photos/Bridge01.png?raw=true)
 <br><br>
 **The very last portion of the hex should have two equal signs == after it to finish the string construction.**
+<br>
 ![Stuff](https://github.com/BTCtoolshed/MeshtasticBitcoinCore_Bridge/blob/main/photos/Bridge02.png?raw=true)
 
 <br><br>
-**How do you fix when you make an error? You just type in -clear- and start over.**<br>
-![Stuff](https://github.com/BTCtoolshed/MeshtasticBitcoinCore_Bridge/blob/main/photos/BridgeBytes.png?raw=true)
+**When the Python program begins, it sends out the message "hello mesh" to all who are on the connected device's Mesh network.**
 
-<br><br>
-**When the Python program begins, it sends out the message "hello mesh" to all who are on the connected device's Mesh network. 
-
-Optional : By sending the message -mempool- , you can check the mempool's "midpoint" of fees to properly account for fees before creating a raw transaction. Every time the python program interacts with your messages sent over Meshtastic, you will see it reply "recvd.." to note that your message has been received.**
+**Optional : By sending the message -mempool- , you can check the mempool's "midpoint" of fees to properly account for fees before creating a raw transaction. Every time the python program interacts with your messages sent over Meshtastic, you will see it reply "recvd.." to note that your message has been received.**
+<br>
 ![Stuff](https://github.com/BTCtoolshed/MeshtasticBitcoinCore_Bridge/blob/main/photos/Bridge03.png?raw=true)
 
 <br><br>
 **Begin sending pieces of your raw transaction with the + sign as you constructed in prior steps. Send them in order! And wait until you see the reply "recvd.." and the following character count, like you see below as Length:204 (this will vary for you).**
+<br>
 ![Stuff](https://github.com/BTCtoolshed/MeshtasticBitcoinCore_Bridge/blob/main/photos/Bridge05.png?raw=true)
 
 <br><br>
 **After receiving the confirmation of the length of the long string you are constructing, you can keep adding portions of the raw transaction...**
+<br>
 ![Stuff](https://github.com/BTCtoolshed/MeshtasticBitcoinCore_Bridge/blob/main/photos/Bridge06.png?raw=true)
 
 <br><br>
@@ -57,10 +62,14 @@ Optional : By sending the message -mempool- , you can check the mempool's "midpo
 
 <br><br>
 **If there is an error, you will see a message from Bitcoin Core or the computer like this...**
+<br>
+**How do you fix when you make an error? You just type in -clear- and start over.**
+<br>
 ![Stuff](https://github.com/BTCtoolshed/MeshtasticBitcoinCore_Bridge/blob/main/photos/Bridge07.png?raw=true)
 
 <br><br>
 **If the broadcast is successful, you will see a message from Bitcoin Core or the computer like this...**
+<br>
 ![Stuff](https://github.com/BTCtoolshed/MeshtasticBitcoinCore_Bridge/blob/main/photos/Bridge08.png?raw=true)
 
 
