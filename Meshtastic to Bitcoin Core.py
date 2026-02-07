@@ -1,5 +1,5 @@
 #pip3 install requests, pyserial and meshtastic
-#make sure you defind the devPath. search for it in the code and change it to your Meshtastic device's devPath (example COM5 or similar for Windows, /dev/ttyUSB0 or similiar for Linxu)
+#make sure you defind the devPath. search for it in the code and change it to your Meshtastic device's devPath (example COM5 or similar for Windows, /dev/ttyUSB0 or similiar for Linux)
 import requests
 import json
 import subprocess
